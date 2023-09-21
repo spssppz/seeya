@@ -5,7 +5,7 @@
   <title>Product</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230920124759">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230921180039">
   <link rel="shortcut icon" href="img/favicon.png">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,6 @@
             <span></span>
           </button>
           <button class="menu__search">
-
             Open search
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -49,6 +48,18 @@
           <img class="header__img header__img_mob" srcset="img/logo-mob@2x.png 2x" src="img/logo-mob.png" width="210" height="68" alt="seeya logotype">
         </a>
         <ul class="header__actions actions-header">
+          <div class="search">
+            <form class="search__form" action="#">
+              <input class="search__input input" autocomplete="no" type="text" name="seach" placeholder="SEARCH">
+              <button class="search__btn">
+                Search
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.2188 28.4375C6.34375 28.4375 0 22.0938 0 14.2188C0 6.34375 6.34375 0 14.2188 0C22.0938 0 28.4375 6.34375 28.4375 14.2188C28.4375 22.0938 22.0938 28.4375 14.2188 28.4375ZM14.2188 2.1875C7.54688 2.1875 2.1875 7.54688 2.1875 14.2188C2.1875 20.8906 7.54688 26.25 14.2188 26.25C20.8906 26.25 26.25 20.8906 26.25 14.2188C26.25 7.54688 20.8906 2.1875 14.2188 2.1875Z" fill="black" />
+                  <path d="M24.8084 23.2608L34.6303 33.0827L33.0837 34.6292L23.2618 24.8074L24.8084 23.2608Z" fill="black" />
+                </svg>
+              </button>
+            </form>
+          </div>
           <li class="actions-header__item actions-header__item_search">
             <button class="actions-header__search">
               Open search
@@ -91,7 +102,171 @@
       </div>
     </header>
     <main class="page">
-
+      <section class="product-page">
+        <div class="product-page__container">
+          <div class="product-page__left">
+            <div class="left-product-nav">
+              <div class="left-product-nav__slider swiper">
+                <div class="left-product-nav__wrapper swiper-wrapper">
+                  <div class="left-product-nav__slide swiper-slide">
+                    <img srcset="img/product-page/01@2x.jpg" src="img/product-page/01.jpg" width="82" height="110" alt="">
+                  </div>
+                  <div class="left-product-nav__slide swiper-slide">
+                    <img srcset="img/product-page/02@2x.jpg" src="img/product-page/02.jpg" width="82" height="110" alt="">
+                  </div>
+                  <div class="left-product-nav__slide swiper-slide">
+                    <img srcset="img/product-page/03@2x.jpg" src="img/product-page/03.jpg" width="82" height="110" alt="">
+                  </div>
+                  <div class="left-product-nav__slide swiper-slide">
+                    <img srcset="img/product-page/04@2x.jpg" src="img/product-page/04.jpg" width="82" height="110" alt="">
+                  </div>
+                  <div class="left-product-nav__slide swiper-slide">
+                    <img srcset="img/product-page/05@2x.jpg" src="img/product-page/05.jpg" width="82" height="110" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-product">
+              <div class="main-product__slider swiper" data-gallery>
+                <div class="main-product__wrapper swiper-wrapper">
+                  <div class="main-product__slide swiper-slide" data-src="img/product-page/01@2x.jpg">
+                    <img srcset="img/product-page/01@2x.jpg 2x" src="img/product-page/01.jpg" width="377" height="447" alt="">
+                  </div>
+                  <div class="main-product__slide swiper-slide" data-src="img/product-page/02@2x.jpg">
+                    <img srcset="img/product-page/02@2x.jpg 2x" src="img/product-page/02.jpg" width="377" height="447" alt="">
+                  </div>
+                  <div class="main-product__slide swiper-slide" data-src="img/product-page/03@2x.jpg">
+                    <img srcset="img/product-page/03@2x.jpg 2x" src="img/product-page/03.jpg" width="377" height="447" alt="">
+                  </div>
+                  <div class="main-product__slide swiper-slide" data-src="img/product-page/04@2x.jpg">
+                    <img srcset="img/product-page/04@2x.jpg 2x" src="img/product-page/04.jpg" width="377" height="447" alt="">
+                  </div>
+                  <div class="main-product__slide swiper-slide" data-src="img/product-page/05@2x.jpg">
+                    <img srcset="img/product-page/05@2x.jpg 2x" src="img/product-page/05.jpg" width="377" height="447" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-product__pagination">
+              </div>
+              <button class="main-product__gallery"></button>
+            </div>
+          </div>
+          <div class="product-page__right right-product">
+            <div class="right-product__top">
+              <h2 class="right-product__name">HOODIE TOTAL BLACK</h2>
+              <div class="right-product__price uah">1200</div>
+            </div>
+            <button class="right-product__favorite right-product__favorite_active">
+              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.29411 12.1324C2.71199 11.5553 2.25087 10.8678 1.93775 10.1103C1.62463 9.35271 1.46581 8.5403 1.47059 7.72061C1.47059 6.06301 2.12907 4.4733 3.30117 3.3012C4.47327 2.1291 6.06298 1.47062 7.72058 1.47062C10.0441 1.47062 12.0735 2.73532 13.147 4.61767H14.7941C15.34 3.66051 16.1297 2.86505 17.0829 2.31225C18.0361 1.75946 19.1187 1.46906 20.2206 1.47062C21.8782 1.47062 23.4679 2.1291 24.64 3.3012C25.8121 4.4733 26.4706 6.06301 26.4706 7.72061C26.4706 9.44119 25.7353 11.0294 24.647 12.1324L13.9706 22.7941L3.29411 12.1324ZM25.6764 13.1765C27.0735 11.7647 27.9411 9.85296 27.9411 7.72061C27.9411 5.67298 27.1277 3.70922 25.6798 2.26134C24.2319 0.813446 22.2682 3.06614e-05 20.2206 3.06614e-05C17.647 3.06614e-05 15.3676 1.25003 13.9706 3.1912C13.2577 2.20059 12.3187 1.39431 11.2317 0.839304C10.1448 0.284301 8.94106 -0.00341921 7.72058 3.06614e-05C5.67295 3.06614e-05 3.70919 0.813446 2.26131 2.26134C0.813416 3.70922 0 5.67298 0 7.72061C0 9.85296 0.867646 11.7647 2.2647 13.1765L13.9706 24.8824L25.6764 13.1765Z" fill="black" />
+                <path class="hover" d="M1 5L4.5 1.5L9.5 1L14 4L17 1.5L20 1L22 1.5L26.5 4L27 10.5L14 24L1 10.5V5Z" fill="black" />
+              </svg>
+              <span>ADD TO FAVORITE</span>
+            </button>
+            <div class="right-product__colors">
+              <h3 class="right-product__label right-product__label_mb">SELECT COLORS <span>2</span>
+              </h3>
+              <div class="right-product__options options-color">
+                <div class="options-color__item">
+                  <input class="options-color__input" hidden id="black" checked type="radio" value="black" name="color">
+                  <label class="options-color__label" for="black">
+                    <img srcset="img/product-page/colors/black@2x.png" src="img/product-page/colors/black.png" width="53" height="64" alt="black">
+                  </label>
+                </div>
+                <div class="options-color__item">
+                  <input class="options-color__input" hidden id="gray" type="radio" value="gray" name="color">
+                  <label class="options-color__label" for="gray">
+                    <img srcset="img/product-page/colors/gray@2x.png" src="img/product-page/colors/gray.png" width="53" height="64" alt="gray">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="right-product__size size-product">
+              <div class="size-product__top">
+                <h3 class="right-product__label">SELECT SIZE</h3>
+                <button class="size-product__quide">size guide</button>
+              </div>
+              <div class="size-product__options options-size">
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="xxs" checked type="radio" value="xxs" name="size">
+                  <label class="options-size__label" for="xxs">XXS</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="xs" type="radio" value="xs" name="size">
+                  <label class="options-size__label" for="xs">XS</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" disabled hidden id="s" type="radio" value="s" name="size">
+                  <label class="options-size__label" for="s">S</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="m" type="radio" value="m" name="size">
+                  <label class="options-size__label" for="m">M</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="l" type="radio" value="l" name="size">
+                  <label class="options-size__label" for="l">L</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="xl" type="radio" value="xl" name="size">
+                  <label class="options-size__label" for="xl">XL</label>
+                </div>
+                <div class="options-size__item">
+                  <input class="options-size__input" hidden id="xxl" type="radio" value="xxl" name="size">
+                  <label class="options-size__label" for="xxl">XXL</label>
+                </div>
+              </div>
+            </div>
+            <button class="right-product__add btn btn_b">ADD TO CARD</button>
+            <ul class="right-product__spollers spollers" data-spollers>
+              <li class="spollers__item">
+                <button class="spollers__title" data-spoller>PRODUCT DETAILS</button>
+                <div class="spollers__body">
+                  <p>RETURN and EXCHANGE POLICY:</p>
+                  <ol>
+                    <li>
+                      You can request a return or exchange of the purchased product of proper quality within 14
+                      calendar
+                      days from the moment of receiving the product if you are not satisfied with the product’s
+                      appearance
+                      or if the size doesn’t fit.
+                    </li>
+                    <li>The cost of shipping for the return is the responsibility of the buyer.</li>
+                  </ol>
+                </div>
+              </li>
+              <li class="spollers__item">
+                <button class="spollers__title" data-spoller>SHIPPING & RETURNES</button>
+                <div class="spollers__body">
+                  <p>RETURN and EXCHANGE POLICY:</p>
+                  <ol>
+                    <li>
+                      You can request a return or exchange of the purchased product of proper quality within 14
+                      calendar
+                      days from the moment of receiving the product if you are not satisfied with the product’s
+                      appearance
+                      or if the size doesn’t fit.
+                    </li>
+                    <li>
+                      Please contact us before actually sending the product back to inform us about the return.
+                    </li>
+                    <li>
+                      All returns received by us must undergo quality control: we accept only products that are in
+                      perfect condition and show no signs of use (such as odors, wrinkles, stains, washing), and they
+                      must
+                      be in their original packaging. We reserve the right to reject the return of a product that does
+                      not
+                      pass this quality check.
+                    </li>
+                    <li>The cost of shipping for the return is the responsibility of the buyer.</li>
+                  </ol>
+                  <p>If you have any questions or specific requests, please feel free to contact us.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="sale">
         <div class="sale__container">
           <h2 class="sale__title title">TOP SALE</h2>
@@ -433,8 +608,8 @@
     </footer>
   </div>
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20230920124759"></script> -->
-  <script src="js/app.min.js?_v=20230920124759"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20230921180039"></script> -->
+  <script src="js/app.min.js?_v=20230921180039"></script>
 
 </body>
 
